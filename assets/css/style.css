@@ -6,12 +6,23 @@
     border:0;
 }
 
+.row{
+width: 600px;
+height: auto;    
+color: rgba(0,0,0, .6);
+}
+button{
+    margin: 1rem;
+}
+
+
 body{
     font-family: Lato;
     color:#777777;
 }
 
 h2{
+    
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -199,10 +210,24 @@ hr{
    background-color: rgba(0,0,0, .6);
    width: 19%;
    height: 300px;
-   float: left;
    padding: 30px 0 0 10px;
    text-align: center;
    margin: 2px;
+   /* background: url("assets/img/runner-end-png")  center  no-repeat;*/
+}
+
+.form-control{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   color: black ;
+   column-width: auto;
+   background-color:rgba(208, 123, 167, 0.179);
+}  
+
+#masthead-main{
+  background-blend-mode: color;
+  box-sizing: border-box;
+  background-color: black;
 
 }
 
@@ -212,7 +237,8 @@ hr{
 }
 
 footer{
-    height: 150px;
+justify-content: space-between;
+line-height: 1rem;
 }
 
 .social-networks{
@@ -241,30 +267,6 @@ footer{
 #photo img{
     width: 100%;
 }
-
-
-/* form */
-
-.form-section {
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
-    background-size: cover;
-    background-position: center;
-     display: inline-block;
-    height: 900px;
-      padding: 15px 32px;
-}
-
-.submit-button{
-  background-color:dodgerblue; /* Green */
-  border: double;
-  color: palevioletred;
-
-  text-align: center;
-
-}
-
-
-/*end form*/
 
 
 
@@ -305,9 +307,6 @@ footer{
         padding: 0;
     }
 
-    hr {
-        display: none;
-    }
     
 }
 
@@ -348,26 +347,8 @@ footer{
         column-count:3;
     }
     
-    
-    #form-container {
-        left:0;
+
+    footer{
+        height: 50px;
     }
-    
-.form-section{
-    display: grid;
-    overflow: auto;
 }
-}
-
-  @media screen and (max-width: 800px) {
-    #photo {
-     column-count:2;
-    }
-  }
-
-
-
-
-
-
-
